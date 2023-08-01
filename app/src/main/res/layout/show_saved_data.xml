@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kotlin.fragments.ShowSavedData">
+
+    <LinearLayout
+        android:id="@+id/spinnerLayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/spinner_shape"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/ic_logo_white_24dp" />
+
+        <Spinner
+            android:id="@+id/spinnerToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:theme="@style/myToolbarPopupTheme"
+            android:backgroundTint="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/RvLayout"
+        android:orientation="vertical"
+        android:layout_below="@+id/spinnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ExpandableListView
+            android:id="@+id/expandAbleListView"
+            android:divider="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

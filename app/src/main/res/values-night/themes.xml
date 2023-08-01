@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="myAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/holo_blue_light</item>
+        <item name="colorPrimaryDark">@color/holo_blue_light</item>
+        <item name="colorAccent">@color/holo_blue_light</item>
+        <item name="android:navigationBarColor">@color/holo_blue_light</item>
+        <item name="android:itemBackground">@color/holo_blue_light</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="myToolbarPopupTheme" parent="Theme.MaterialComponents.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="AlertDialogButtonColor" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/holo_blue_light</item>
+    </style>
+
+</resources>
